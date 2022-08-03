@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+  ul{
+    display: flex;
+    margin-right: 20px;
+  
+  }
+  li {
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 12px;
+    border-bottom: 2px transparent solid;
+    transition: ease 0.2s;
+    cursor: pointer;
+  }
+
+  .list {
+    @apply hover:border-b-2 hover:leading-normal  hover:border-solid hover:border-black hover:ease-in hover:duration-200 
+  }
+
+  .den {
+    @apply md:flex  justify-center items-center md:transition-all md:duration-300 md:bg-white md:absolute md:w-full md:left-0 md:top-[113px] z-20;
+  }
+
+  
+}
