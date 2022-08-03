@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex w-full h-20 p-0 m-0 no-underline font-sans list-none box-border justify-between items-center">
-      <div className="text-black text-5xl ease-in duration-500 leading-10 py-0 px-12 font-bold  hover:opacity-50 cursor-pointer">
+      <div className="text-black text-5xl lg:text-3xl lg:pl-12 lg:ease-in lg:duration-500 ease-in duration-500 leading-10 py-0 px-12 font-bold  hover:opacity-50 cursor-pointer">
         <Link to="/home">
           <svg
             class="pre-logo-svg"
@@ -26,13 +26,13 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex justify-center items-center">
-        <input type="checkbox" id="check" />
+        <input type="checkbox" id="check hidden" />
         <label htmlFor="check" className=" text-3xl float-right leading-10 mr-10 hidden cursor-pointer">
           <i className="fa-solid fa-bars"></i>
         </label>
 
         <ul className=" mr-5">
-          <input type="checkbox" id="check" />
+          <input type="checkbox" id="check hidden" />
           <label htmlFor="check" className=" text-3xl float-right leading-10 mr-10 hidden cursor-pointer">
             <i className="fa-solid fa-x close hidden"></i>
           </label>
